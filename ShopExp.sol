@@ -11,7 +11,7 @@ abstract contract Shop is IShop {
 
 contract Buyer {
     bool isCalled = false;
-    Shop s = Shop(0x436ddb20c8d5153e823D64a1E57E64901B63097F);
+    Shop s = Shop(<address of contract>);
 
     function attack() public {
         s.buy();
